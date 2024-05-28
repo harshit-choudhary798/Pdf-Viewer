@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: blue;
+            color: white; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Open PDF in Different Ways</h1>
+    
+    <button id="openEmbedButton">Way One: Embed</button>
+    <button id="openIframeButton">Way Two: iFrame</button>
+    <button id="openObjectButton">Way Three: Object</button>
+
+    <script>
+        document.getElementById('openEmbedButton').addEventListener('click', function() {
+            window.open('random.pdf', '_blank');
+        });
+
+        document.getElementById('openIframeButton').addEventListener('click', function() {
+            window.open('random.pdf', '_blank');
+        });
+
+        document.getElementById('openObjectButton').addEventListener('click', function() {
+            window.open('random.pdf', '_blank');
+        });
+    </script>
+</body>
+</html>
